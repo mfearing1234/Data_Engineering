@@ -1,0 +1,32 @@
+{"data":{"log_version":3,"version":"=2.0.0-preview.164"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019d8928-d2c6-73f3-84ae-55cb9b8b56a7","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.164","name":"MainReportVersion","pid":7519,"thread":"tokio-rt-worker","ts":"2026-04-13T23:24:07.241547Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"/home/codespace/.local/bin/dbt license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019d8928-d2c6-73f3-84ae-55cb9b8b56a7","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":7519,"thread":"tokio-rt-worker","ts":"2026-04-13T23:24:07.241566Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"019d8928-d2c6-73f3-84ae-55cb9b8b56a7","level":"debug","msg":"No active cloud project configured, skipping remote license","name":"Generic","pid":7519,"thread":"tokio-rt-worker","ts":"2026-04-13T23:24:07.241752Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019d8928-d2c6-73f3-84ae-55cb9b8b56a7","level":"info","msg":"{\n  \"status\": \"not_found\",\n  \"licensing_enabled\": true\n}","name":"ShowNode","pid":7519,"thread":"tokio-rt-worker","ts":"2026-04-13T23:24:07.241943Z"}}
+{"data":{"completed_at":"2026-04-13T23:24:07.429098Z","elapsed":0.1876794546842575,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019d8928-d2c6-73f3-84ae-55cb9b8b56a7","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [187ms]","name":"CommandCompleted","pid":7519,"thread":"tokio-rt-worker","ts":"2026-04-13T23:24:07.429178Z"}}
+==================== 2026-04-13T23:32:51.359000Z | 019d8930-d21d-7871-b37b-6f5620e1dcaf ====================
+23:32:51.359144 [info ]: Installing dbt project and profile setup
+23:32:51.362583 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+23:32:51.362729 [info ]: Success Project created successfully!
+23:32:51.362833 [info ]: Info Project name: jaffle_shop
+23:32:51.362912 [info ]: Info Project directory: jaffle_shop
+23:32:51.362991 [info ]: Info Setting up your profile...
+23:32:51.363311 [info ]: Info Creating new profile...
+23:32:54.632609 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+23:51:10.075036 [info ]: Success Profile written to /home/codespace/.dbt/profiles.yml
+23:51:10.075256 [info ]: Validating profile inputs, adapters, and connection
+
+23:51:10.075360 [info ]: dbt-fusion 2.0.0-preview.164
+23:51:10.084521 [info ]: Started loading project
+23:51:10.122916 [info ]: Loading ~/.dbt/profiles.yml
+23:51:10.139024 [info ]: Finished loading project [  0.05s]
+23:51:10.142599 [info ]: Started debugging
+23:51:10.142679 [info ]: Debugging profile: dev
+23:51:10.142708 [info ]: Debugging dbt version: 2.0.0-preview.164
+23:51:10.142721 [info ]: Debugging platform: linux x86_64 (unix)
+23:51:10.143032 [info ]: Debugging adapter type: databricks (remote)
+23:51:10.153102 [info ]: Debugging dependencies:
+  git: OK
+23:51:10.167721 [info ]: Debugging connection:
+  "schema": "dbt_mfearing",
+  "host": "dbc-aec12dc2-641c.cloud.databricks.com",
+  "http_path": "/sql/1.0/warehouses/4235877c2872d9c0"
