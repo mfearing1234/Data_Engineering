@@ -1,6 +1,6 @@
-name: jaffle_shop
+name: dbt_project
 
-profile: jaffle_shop
+profile: dbt_mfearing
 
 seed-paths: ["seeds"]
 model-paths: ["models"]
