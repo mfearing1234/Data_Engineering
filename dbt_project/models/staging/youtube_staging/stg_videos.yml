@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: stg_videos
+    columns:
+      - name: VIDEO_ID
+        description: The unique identifier for each video.
+        data_tests:
+          - not_null
+          - unique
+      - name: TITLE
+        description: The title of the video.
+      - name: DESCRIPTION
+        description: The description of the video.
+      - name: PUBLISHED_AT
+        description: The date and time when the video was published.
+      - name: CHANNEL_ID   
+        description: The unique identifier for the channel that created the video.
+      - name: CHANNEL_TITLE
+        description: The title of the channel that created the video.
+      - name: DURATION
+        description: The duration of the video in ISO 8601 format.  
+      - name: VIEW_COUNT
+        description: The number of views the video has received.
+      - name: LIKE_COUNT
+        description: The number of likes the video has received.
+      - name: COMMENT_COUNT
+        description: The number of comments the video has received.
+      - name: INGESTED_AT
+        description: The date and time when the data was ingested into the warehouse.
+  

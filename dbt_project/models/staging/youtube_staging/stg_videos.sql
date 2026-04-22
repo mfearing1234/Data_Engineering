@@ -1,0 +1,13 @@
+SELECT 
+    VIDEO_ID,
+    TITLE,
+    DESCRIPTION,
+    PUBLISHED_AT,
+    CHANNEL_ID,
+    CHANNEL_TITLE,
+    DURATION,
+    VIEW_COUNT,
+    LIKE_COUNT,
+    COMMENT_COUNT,
+    INGESTED_AT
+FROM {{ source('youtube', 'videos') }}
