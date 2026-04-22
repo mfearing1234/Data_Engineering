@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_playlist
+    columns:
+      - name: playlist_id
+        description: The unique identifier for each playlist.
+        data_tests:
+          - not_null
+          - unique
+      - name: title
+        description: The title of the playlist.
+      - name: description
+        description: The description of the playlist.
+      - name: published_at
+        description: The date and time when the playlist was published.
+      - name: channel_id   
+        description: The unique identifier for the channel that created the playlist.
+      - name: channel_title
+        description: The title of the channel that created the playlist.
+      - name: item_count
+        description: The number of videos included in the playlist.
+      - name: ingested_at
+        description: The date and time when the data was ingested into the warehouse.

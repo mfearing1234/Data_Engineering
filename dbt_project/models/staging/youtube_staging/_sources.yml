@@ -2,15 +2,15 @@ version: 2
 
 # Try using these source definitions instead!
 sources:
-  - name: ecom
-    schema: "{{ youtube }}_raw"
-    description: E-commerce data for the Jaffle Shop
+  - name: youtube
+    schema: "youtube"
+    description: YouTube data including playlists, videos, and playlist-video relationships
     tables:
-      - name: raw_playlists
+      - name: playlists
         description: One record per playlist created by a user
-      - name: raw_videos
+      - name: videos
         description: One record per video uploaded by a user
-      - name: raw_playlist_videos
+      - name: playlist_videos
         description: One record per video included in a playlist
         config:
-          loaded_at_field: injested_at
+          loaded_at_field: ingested_at
