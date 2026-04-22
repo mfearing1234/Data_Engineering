@@ -1,0 +1,16 @@
+version: 2
+
+# Try using these source definitions instead!
+sources:
+  - name: ecom
+    schema: "{{ youtube }}_raw"
+    description: E-commerce data for the Jaffle Shop
+    tables:
+      - name: raw_playlists
+        description: One record per playlist created by a user
+      - name: raw_videos
+        description: One record per video uploaded by a user
+      - name: raw_playlist_videos
+        description: One record per video included in a playlist
+        config:
+          loaded_at_field: injested_at
