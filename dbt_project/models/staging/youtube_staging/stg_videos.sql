@@ -11,3 +11,5 @@ SELECT
     COMMENT_COUNT,
     INGESTED_AT
 FROM {{ source('youtube', 'videos') }}
+WHERE TRUE
+AND UPPER(TITLE) LIKE '%ZOMBIE%'
